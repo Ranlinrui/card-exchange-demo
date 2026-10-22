@@ -1,0 +1,48 @@
+{
+  "allowedHosts": ["127.0.0.1:8766"],
+  "headless": true,
+  "timeoutMs": 5000,
+  "login": {
+    "url": "http://127.0.0.1:8766/login",
+    "usernameSelector": "#demo-username",
+    "passwordSelector": "#demo-password",
+    "submitSelector": "#demo-login",
+    "successSelector": "#demo-session",
+    "errorSelector": "#demo-login-error",
+    "captchaSelector": "[data-demo-captcha]"
+  },
+  "create": {
+    "url": "http://127.0.0.1:8766/create",
+    "productSelector": "#demo-product",
+    "productControl": "select",
+    "targetSelector": "#demo-target",
+    "merchantRefSelector": "#demo-merchant-ref",
+    "submitSelector": "#demo-create"
+  },
+  "query": {
+    "url": "http://127.0.0.1:8766/query",
+    "merchantRefSelector": "#demo-query-merchant-ref",
+    "referenceSelector": "#demo-query-reference",
+    "submitSelector": "#demo-query"
+  },
+  "result": {
+    "rootSelector": "#demo-result",
+    "statusSelector": "#demo-result",
+    "statusAttribute": "data-status",
+    "referenceSelector": "#demo-reference",
+    "statusMap": {
+      "processing": "processing",
+      "completed": "succeeded",
+      "failed": "failed",
+      "not_found": "not_found",
+      "unknown": "unknown"
+    },
+    "delivery": {
+      "kindSelector": "#demo-delivery-kind",
+      "textSelector": "#demo-delivery-text",
+      "emailSelector": "#demo-delivery-email",
+      "passwordSelector": "#demo-delivery-password",
+      "totpSecretSelector": "#demo-delivery-totp"
+    }
+  }
+}

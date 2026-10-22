@@ -1,0 +1,4 @@
+[
+  {"id":"demo-code","name":"示例兑换码（模拟）","price_cents":100,"currency":"CNY","kind":"code","target_label":"接收账号或备注"},
+  {"id":"demo-account","name":"示例账号与动态口令（模拟）","price_cents":200,"currency":"CNY","kind":"account","target_label":"接收账号或备注"}
+]
